@@ -18,6 +18,14 @@ func main() {
 	}
 	p := mygeo.Point{4, 9}
 	q := mygeo.Point{2, 6}
+        r := &mygeo.Point{1,2}
+	r.ScaleBy(10)
+        
+	fmt.Println(&r)
+	fmt.Println(*r)
+        fmt.Println(r)
+	fmt.Println()
+
 	fmt.Println(mygeo.Distance(p, q))
 	fmt.Println(p.Distance(q))
         fmt.Println(perim.Distance())
