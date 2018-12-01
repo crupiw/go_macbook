@@ -10,6 +10,7 @@ func main() {
 	pptr := &np	
         pptr.ScaleBy(2)
 	fmt.Println(np)
+	fmt.Println()
 	perim := mygeo.Path{
 		{1,1},
 		{5,1},
@@ -17,10 +18,15 @@ func main() {
 		{1,1},
 	}
 	p := mygeo.Point{4, 9}
+	fmt.Println()
 	q := mygeo.Point{2, 6}
+	fmt.Println()
         r := &mygeo.Point{1,2}
 	r.ScaleBy(10)
-        
+        s := mygeo.Point{9,11}
+        (&s).ScaleBy(3)
+        fmt.Println(s)
+	fmt.Println()
 	fmt.Println(&r)
 	fmt.Println(*r)
         fmt.Println(r)
@@ -29,4 +35,6 @@ func main() {
 	fmt.Println(mygeo.Distance(p, q))
 	fmt.Println(p.Distance(q))
         fmt.Println(perim.Distance())
+        
+	fmt.Println()
 }
