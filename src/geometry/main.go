@@ -35,6 +35,8 @@ func main() {
 	fmt.Println(mygeo.Distance(p, q))
 	fmt.Println(p.Distance(q))
         fmt.Println(perim.Distance())
-        
+        fmt.Println() 
+	fmt.Println(pptr.Distance(q))
 	fmt.Println()
+        fmt.Println((*pptr).Distance(q))
 }
