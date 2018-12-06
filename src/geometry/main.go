@@ -39,4 +39,7 @@ func main() {
 	fmt.Println(pptr.Distance(q))
 	fmt.Println()
         fmt.Println((*pptr).Distance(q))
+	fmt.Println()
+	fmt.Println(mygeo.Point{1,2}.Distance(q))
+	fmt.Println()
 }
