@@ -15,3 +15,4 @@ func main() {
 	function1()
 	fmt.Println("main line 2")
 }
+// comment
